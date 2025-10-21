@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: clamp(14px, 1vw, 18px);
+}
+
+body {
+  background-color: rgb(18, 18, 18);
+}
+
+section {
+  max-width: 2000px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.view1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+main section.view1 .top {
+  width: 100%;
+}
+main section.view1 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view1 .bottom {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.view1 .bottom .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.view1 .bottom .text h1 {
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #f4f2ed;
+}
+main section.view1 .bottom .text p {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #9e9d9a;
+}
+main section.view1 .bottom .text .arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+main section.view1 .bottom .text button {
+  color: white;
+  background-color: #1e1e1e;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main section.view2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+main section.view2 .top,
+main section.view2 .bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+main section.view2 .top .element,
+main section.view2 .bottom .element {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.view2 .top .element small,
+main section.view2 .bottom .element small {
+  opacity: 0.5;
+}
+main section.view2 .top .element h2,
+main section.view2 .bottom .element h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+main section.view3 {
+  width: 100%;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.view3 .top {
+  width: 100%;
+}
+main section.view3 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view3 .bottom {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.view3 .bottom .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section.view3 .bottom .text h1 {
+  font-weight: 100;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #f4f2ed;
+}
+main section.view3 .bottom .text p {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #9e9d9a;
+}
+main section.view3 .bottom > p {
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+main section.view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+main section.view4 .card {
+  width: 100%;
+  background-image: url(./girlstanding);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  border-radius: 0.7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view4 .card .icon,
+main section.view4 .card .bottom {
+  background-color: #b2a69d;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main section.view4 .card .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view4 .card .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.view4 .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+}
+main section.view4 .card .bottom p {
+  text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  main section.view1 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view1 .top,
+  main section.view1 .bottom {
+    width: 50%;
+  }
+  main section.view1 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view1 .text h1 {
+    font-size: 3.5rem;
+  }
+  main section.view2 {
+    flex-direction: row;
+    padding: 1rem 4rem;
+  }
+  main section.view3 {
+    flex-direction: row-reverse;
+  }
+  main section.view3 .top,
+  main section.view3 .bottom {
+    width: 50%;
+  }
+  main section.view3 .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section.view3 .bottom .paragraphs {
+    display: flex;
+    gap: 2rem;
+  }
+  main section.view3 .bottom .text h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  main section.view4 {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
