@@ -147,18 +147,58 @@ main {
     }
   }
   section.view4 {
+    width: 100%;
+    padding: 1rem;
+    @include mymixin(1rem);
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+    .bottom {
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 0.7rem;
+      @include mymixin(1rem);
+      .text {
+        @include mymixin(0.5rem);
+
+        h1 {
+          font-weight: 100;
+          font-style: normal;
+          text-transform: uppercase;
+          color: #f4f2ed;
+        }
+        p {
+          font-weight: 100;
+          font-size: 1rem;
+          line-height: 2rem;
+          color: #9e9d9a;
+        }
+      }
+    }
+
+    .bottom > p {
+      text-transform: uppercase;
+      margin-bottom: 4rem;
+    }
+  }
+  section.view5 {
     @include mymixin(2rem);
     gap: 2rem;
     width: 100%;
     padding: 1rem;
 
-      .card:nth-child(2) {
-    background-image: url('./girlsmiling');
-  }
-  .card:nth-child(3) {
-    background-image: url('./boystanding');
-  }
-
+    .card:nth-child(2) {
+      background-image: url("./girlsmiling");
+    }
+    .card:nth-child(3) {
+      background-image: url("./boystanding");
+    }
 
     .card {
       width: 100%;
@@ -173,11 +213,14 @@ main {
 
       .icon,
       .bottom {
-        background-color: #b2a69d;
-        backdrop-filter: blur(5px);
-        border: 1px solid white;
+        background-color: #2c2825;
+        backdrop-filter: blur(20px);
+        border: 1px solid rgb(124, 117, 117);
         border-radius: 0.7rem;
         padding: 0.5rem;
+        cursor: pointer;
+        font-size: large;
+        background-color: transparent;
       }
       .top {
         display: flex;
@@ -249,6 +292,29 @@ main {
       }
     }
     section.view4 {
+      flex-direction: row;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+        .paragraphs {
+          display: flex;
+          gap: 2rem;
+        }
+        .text {
+          h1 {
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    section.view5 {
       flex-direction: row;
     }
   }
