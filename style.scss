@@ -152,6 +152,14 @@ main {
     width: 100%;
     padding: 1rem;
 
+      .card:nth-child(2) {
+    background-image: url('./girlsmiling');
+  }
+  .card:nth-child(3) {
+    background-image: url('./boystanding');
+  }
+
+
     .card {
       width: 100%;
       background-image: url(./girlstanding);

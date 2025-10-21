@@ -161,6 +161,12 @@ main section.view4 {
   width: 100%;
   padding: 1rem;
 }
+main section.view4 .card:nth-child(2) {
+  background-image: url("./girlsmiling");
+}
+main section.view4 .card:nth-child(3) {
+  background-image: url("./boystanding");
+}
 main section.view4 .card {
   width: 100%;
   background-image: url(./girlstanding);
