@@ -187,6 +187,17 @@ main {
       margin-bottom: 4rem;
     }
   }
+  span {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+
+    padding-left: 2rem;
+  }
+
   section.view5 {
     @include mymixin(2rem);
     gap: 2rem;
@@ -240,6 +251,78 @@ main {
           text-transform: uppercase;
           // padding: 1.5rem;
         }
+      }
+    }
+  }
+
+  section.view6 {
+    width: 100%;
+    padding: 1rem;
+    @include mymixin(1rem);
+
+    .top {
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 0.7rem;
+      }
+    }
+    .bottom {
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 0.7rem;
+      @include mymixin(1rem);
+      .text {
+        @include mymixin(0.5rem);
+
+        h1 {
+          font-weight: 100;
+          font-style: normal;
+          text-transform: uppercase;
+          color: #f4f2ed;
+        }
+        p {
+          opacity: 0;
+        }
+      }
+    }
+
+    .bottom > p {
+      text-transform: uppercase;
+      margin-bottom: 4rem;
+    }
+  }
+  section.view7 {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    background-color: #cebd63;
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    small {
+      text-transform: uppercase;
+      color: #1a1a1a;
+      font-size: 13px;
+    }
+    h1 {
+      text-transform: uppercase;
+      color: #1a1a1a;
+      font-weight: 300;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      font-size: 3rem;
+    }
+    button {
+      background-color: #121212;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      padding: 1rem 1rem;
+      cursor: pointer;
+
+      i {
+        font-size: 20px;
       }
     }
   }
@@ -314,8 +397,63 @@ main {
         }
       }
     }
+    span {
+      font-size: 3rem;
+    }
     section.view5 {
       flex-direction: row;
+    }
+    section.view6 {
+      flex-direction: row;
+
+      .top,
+      .bottom {
+        width: 50%;
+      }
+      .bottom {
+        justify-content: space-between;
+        padding: 3rem;
+        .paragraphs {
+          display: flex;
+          gap: 2rem;
+          p {
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+          }
+        }
+        .text {
+          h1 {
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    section.view7 {
+      width: 98%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+
+      h1 {
+        font-size: 75px;
+        font-weight: 100;
+      }
+
+      button {
+        padding: 12px 1rem;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        cursor: pointer;
+      }
     }
   }
 }
