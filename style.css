@@ -197,7 +197,7 @@ main section.view4 .bottom > p {
   margin-bottom: 4rem;
 }
 main span {
-  width: 100%;
+  width: 93%;
   font-size: 2rem;
   font-weight: 100;
   display: flex;
@@ -332,6 +332,106 @@ main section.view7 button {
 main section.view7 button i {
   font-size: 20px;
 }
+main section.view8 {
+  min-width: 93%;
+  color: white;
+}
+main section.view8 .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+main section.view8 .icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border: 1px solid #fff; /* White border or your preferred color */
+  border-radius: 50%; /* Makes it a perfect circle */
+  display: flex;
+  align-items: center; /* Vertically center the icon */
+  justify-content: center; /* Horizontally center the icon */
+  background-color: transparent; /* Optional: background styling */
+  margin: 5px;
+  font-size: 20px;
+}
+main section.view8 .logo {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 15rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main section.view8 .top {
+  display: flex;
+}
+main section.view8 h1 {
+  color: #cdccc8;
+  font-weight: 300;
+}
+main section.view8 div {
+  color: white;
+}
+main section.view8 .middiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  padding: 5px;
+  margin-top: 15px;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main section.view8 .middiv header {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 15px 1px;
+}
+main section.view8 .middiv button {
+  background-color: #cebd63;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+main section.view8 .middiv li {
+  list-style: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #9e9d9a;
+}
+main section.view8 .bottomdiv {
+  background-color: #1e1e1e;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 0.7rem;
+  height: 13rem;
+  align-items: center;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.view8 .bottomdiv h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.view8 .bottomdiv h1 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
 
 @media (min-width: 900px) {
   main section.view1 {
@@ -395,6 +495,11 @@ main section.view7 button i {
   }
   main span {
     font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
   main section.view5 {
     flex-direction: row;
@@ -445,5 +550,108 @@ main section.view7 button i {
     align-items: center;
     width: 25%;
     cursor: pointer;
+  }
+  main .view8 {
+    margin: 0;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+  main .view8 .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .view8 .logo .topdiv h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  main .view8 .logo .top {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  main .view8 .logo .top .icon {
+    background: #222;
+    padding: 0.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+  }
+  main .view8 .logo .top .icon:hover {
+    background: #333;
+  }
+  main .view8 .middiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  main .view8 .middiv header {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+  main .view8 .middiv ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+  }
+  main .view8 .middiv ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  main .view8 .middiv ul li:hover {
+    color: #ffd700;
+  }
+  main .view8 .middiv ul button {
+    background: #d6b953;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  main .view8 .middiv ul button:hover {
+    background: #c3a844;
+  }
+  main .view8 .bottomdiv {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  main .view8 .bottomdiv div h1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #aaa;
+  }
+  main .view8 .bottomdiv div h1 span {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  main .view8 .bottomdiv div h1 i {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=style.css.map */
